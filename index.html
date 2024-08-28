@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Currency Convertor</h1>
+        <div class="form">
+            <form>
+                <div class="dropdown">
+                    <div class="from-box">
+                        <p>Select your currency name </p>
+                        <div class="select-container">
+                            <div class="flag-dropdown">
+                                <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                                <select name="from"></select>
+                            </div>
+                        </div>
+                        <div class="amount">
+                            <p>$</p>
+                            <input value="1" type="text" />
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-right-left"></i>
+                    </div>
+                    <div class="to-box">
+                        <p>Select converted currency type</p>
+                        <div class="select-container">
+                            <div class="flag-dropdown">
+                                <img src="https://flagsapi.com/IN/flat/64.png" alt="flag">
+                                <select name="to">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class = "amount">
+                            <p>$</p>
+                        </div>
+                            <input type="text" id="currency-converted" name="currency" value="83.67" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="last-update">
+                    <p>last updated on:</p>
+                </div>
+                <button class="btn">CONVERT</button>
+            </form>
+        </div>
+    </div>
+    <script src="currency.js"></script>
+    <script src="code.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
